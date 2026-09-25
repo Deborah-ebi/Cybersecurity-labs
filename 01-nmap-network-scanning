@@ -1,0 +1,71 @@
+Nmap Network Scanning Lab
+
+Overview
+
+This project documents my beginner-level exploration of network scanning and reconnaissance using Nmap in a controlled virtual lab environment.
+
+Objective
+
+The objective was to:
+
+* Discover hosts within a lab network
+* Identify open, closed, and filtered ports
+* Identify services running on discovered ports
+* Understand the difference between network scanning and enumeration
+
+Lab Environment
+
+* Kali Linux
+* Metasploitable
+* VirtualBox
+* Nmap
+
+Tools Used
+
+Nmap — Network discovery and port scanning
+
+VirtualBox — Virtualized lab environment
+
+Kali Linux — Security testing environment
+
+Scanning
+
+I used Nmap to scan selected ports on the target machine.
+
+Example:
+
+nmap -p 21,22,23,80 10.0.2.15
+
+The scan was used to examine common services including FTP, SSH, Telnet, and HTTP.
+
+What I Observed
+
+The scan returned different port states, including filtered and closed ports.
+
+I learned that:
+
+* An open port indicates that an application is actively accepting connections.
+* A closed port indicates that the port is reachable but no application is listening.
+* A filtered port means that a firewall or other network filtering mechanism is preventing Nmap from determining whether the port is open.
+
+Challenges
+
+One of the challenges I encountered was configuring the virtual machines so that Kali Linux and Metasploitable could communicate correctly on the same virtual network.
+
+This helped me understand the importance of correct network configuration before performing security testing.
+
+Key Takeaways
+
+This lab helped me understand the practical process of network reconnaissance and gave me hands-on experience interpreting Nmap scan results.
+
+I also learned that scanning results need to be interpreted in the context of the network configuration rather than assuming that every result represents a security vulnerability.
+
+Next Steps
+
+I plan to continue building my skills in:
+
+* Service enumeration
+* Vulnerability assessment
+* Web application security
+* Penetration testing
+* Ethical hacking
